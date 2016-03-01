@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#ffffff"
+        >
+        
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/logo"
+	        android:layout_gravity="center"
+	        android:layout_width="200dp" />
+	</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consentText"
+        android:paddingTop="4dp" />
+
+    <CheckBox
+        android:id="@+id/consentCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to share anonymous usage data with the University of Strathclyde" 
+         android:paddingTop="4dp" />
+
+    <Button
+        android:id="@+id/intronext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next >>"
+         android:paddingTop="4dp"  />
+
+</LinearLayout>

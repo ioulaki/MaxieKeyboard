@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Title for Latin keyboard -->
+    <string name="ime_name">MaxieKeyboard</string>
+
+    <!-- Symbols that are commonly considered word separators in this language -->
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+    <string name="special_separators">:;</string>
+
+    <!-- Labels on soft keys -->
+    <string name="label_go_key">Go</string>
+    <string name="label_next_key">Next</string>
+    <string name="label_send_key">Send</string>
+    <string name="alternates_for_ypsilon">υύϋΰ</string>
+    <string name="alternates_for_iota">ιίϊΐ</string>
+    <string name="alternates_for_epsilon">εέ</string>
+    <string name="alternates_for_omicron">οό</string>
+    <string name="alternates_for_eta">ηή</string>
+    <string name="alternates_for_omega">ωώ</string>
+    <string name="alternates_for_alpha">αά</string>
+    <string name="spellcheckername">MaxieKeyboard SpellChecker</string>
+    <string name="test">Be awesome</string>
+    <string name="spellcheckersettings">MaxieKeyboard SpellChecker Settings</string>
+    <string name="subtype">Under Development</string>
+    <string name="keyboardsettings">MaxieKeyboard Settings</string>
+    <string name="title_activity_gui_activity">MaxieKeyboard Setup</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bio">Your Details</string>
+
+    <string-array name="ages_array">
+        <item>18-30</item>
+        <item>31-40</item>
+        <item>41-50</item>
+        <item>51-60</item>
+        <item>60-70</item>
+        <item>70+</item>
+    </string-array>
+    <string-array name="sex_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="countries_array">
+        <item>Australia</item>
+        <item>Canada</item>
+        <item>Ireland</item>
+        <item>New Zealand</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+    </string-array>
+
+    <string name="title_activity_intro">MaxieKeyboard Setup</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="consentText">
+        Thank you for choosing to download the MaxieKeyboard. 
+        The MaxieKeyboard has been developed as a part of a research project funded by the UK scientific funding body (EPSRC) and your use of it will help researchers to learn more about how people use keyboards on their mobile phones. 
+        As you use the keyboard to access different applications, the keyboard will collect statistical information about how you are using the keyboard. 
+        The information is collected anonymously and will not make you or anyone else using the phone identifiable.
+        MaxieKeyboard does not capture what you type or any personal or private details. 
+        Your usage statistics will be sent to us automatically only when you are connected to a Wi-Fi network and will not result in any charges.
+        The data is used only for research purposes. We hope that you will enjoy using the MaxieKeyboard.
+    </string>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="9.45%p"
+    android:horizontalGap="0.5%p"
+    android:verticalGap="1%p"
+    android:keyHeight="@dimen/key_height"
+    >
+
+    <Row> 
+        <Key android:codes="59" android:keyLabel=";" android:keyEdgeFlags="left"/>
+        <Key android:codes="962" android:keyLabel="ς"/>
+        <Key android:codes="949,941" android:keyLabel="ε"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="@string/alternates_for_epsilon"/>
+        <Key android:codes="961" android:keyLabel="ρ"/>
+        <Key android:codes="964" android:keyLabel="τ"/>
+        <Key android:codes="965,973,971,944" android:keyLabel="υ"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="@string/alternates_for_ypsilon"/>
+        
+        <Key android:codes="952" android:keyLabel="θ"/>
+        <Key android:codes="953,943,970,912" android:keyLabel="ι"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="@string/alternates_for_iota"/>
+        <Key android:codes="959,972" android:keyLabel="ο"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="@string/alternates_for_omicron"/>
+        <Key android:codes="960" android:keyLabel="π" android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <Row>
+        <Key android:codes="945,940" android:keyLabel="α" android:horizontalGap="5.725%p" 
+                android:keyEdgeFlags="left"
+                android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="@string/alternates_for_alpha"/>
+                />
+        <Key android:codes="963" android:keyLabel="σ"/>
+        <Key android:codes="948" android:keyLabel="δ"/>
+        <Key android:codes="966" android:keyLabel="φ"/>
+        <Key android:codes="947" android:keyLabel="γ"/>
+        <Key android:codes="951,942" android:keyLabel="η"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="@string/alternates_for_eta"/>
+        <Key android:codes="958" android:keyLabel="ξ"/>
+        <Key android:codes="954" android:keyLabel="κ"/>
+        <Key android:codes="955" android:keyLabel="λ" android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <Row>
+        <Key android:codes="-1" android:keyIcon="@drawable/sym_keyboard_shift" 
+                android:keyWidth="14.35%p" android:isModifier="true"
+                android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="950" android:keyLabel="ζ"/>
+        <Key android:codes="967" android:keyLabel="χ"/>
+        <Key android:codes="968" android:keyLabel="ψ"/>
+        <Key android:codes="969,974" android:keyLabel="ω"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="@string/alternates_for_omega"/>
+        <Key android:codes="946" android:keyLabel="β"/>
+        <Key android:codes="957" android:keyLabel="ν"/>
+        <Key android:codes="956" android:keyLabel="μ"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" 
+                android:keyWidth="14.35%p" android:keyEdgeFlags="right"
+                android:isRepeatable="true"/>
+    </Row>
+    
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-2" android:keyLabel="123" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        
+        <Key android:codes="44" android:keyLabel="," />
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" 
+                android:keyWidth="48.1%p" android:isRepeatable="true"/>
+        <Key android:codes="46" android:keyLabel="."
+                />
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" 
+                android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>
+    

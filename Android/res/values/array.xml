@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <string-array name="colourBarOptions">
+     <item>Off</item>
+     <item>Top only</item>
+     <item>Keyboard borders</item>
+     <item>Keyboard background</item>
+     </string-array>
+ 
+   <string-array name="colourBarValues">
+     <item>off</item>
+     <item>top</item>
+     <item>border</item>
+     <item>background</item>
+   </string-array>
+   </resources>

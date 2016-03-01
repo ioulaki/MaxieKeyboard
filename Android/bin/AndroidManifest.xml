@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.strathclyde.oats"
+    android:versionCode="5"
+    android:versionName="1.4.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:icon="@drawable/icon512"
+        android:label="@string/ime_name" >
+        <receiver
+            android:name="com.strathclyde.highlightingkeyboard.UploadDataReceiver"
+            android:process=":remote" />
+
+        <service
+            android:name="com.strathclyde.corehandler.CoreService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.strathclyde.highlightingkeyboard.SoftKeyboardService"
+            android:permission="android.permission.BIND_INPUT_METHOD" >
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+        <service
+            android:name="com.strathclyde.spellchecking.ASpellCheckerService"
+            android:permission="android.permission.BIND_TEXT_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.textservice.SpellCheckerService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.textservice.scs"
+                android:resource="@xml/spellchecker" />
+        </service>
+
+        <!-- Optional activities. A good idea to have some user settings. -->
+        <activity
+            android:name="com.strathclyde.highlightingkeyboard.LoggingIMESettings"
+            android:label="@string/keyboardsettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.strathclyde.spellchecking.ASpellCheckerActivity"
+            android:label="@string/spellcheckername" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GUI_activity"
+            android:label="@string/title_activity_gui_activity" >
+            <intent-filter android:label="@string/title_activity_gui_activity" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BioActivity"
+            android:label="@string/title_activity_bio"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/title_activity_intro" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

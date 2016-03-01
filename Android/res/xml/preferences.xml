@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 	<PreferenceCategory android:title="Autocorrect" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="autocorrect"
+            android:summary="Automatically correct minor spelling mistakes"
+            android:title="Autocorrect" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    
+    <!--
+    <PreferenceCategory android:title="Suggestion Settings" >
+         <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="completions"
+            android:summary=""
+            android:title="Completion Suggestions" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="corrections"
+            android:summary=""
+            android:title="Error Corrections" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="proximity"
+            android:summary=""
+            android:title="Proximity Suggestions" >
+        </CheckBoxPreference>        
+        <EditTextPreference
+                android:title="Max Suggestions"
+                android:summary=""
+                android:key="maxsuggs"/>
+    </PreferenceCategory>
+    -->
+    
+    <PreferenceCategory android:title="Visual Feedback Settings" >
+        
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="highlightwords"
+            android:summary="Highlights mistakes in the text you have entered"
+            android:title="Highlight Mistakes" >
+        </CheckBoxPreference>
+        
+        <ListPreference
+	     android:entries="@array/colourBarOptions"
+	     android:entryValues="@array/colourBarValues"
+	     android:key="colorbar"
+	     android:summary="Shows the on-keyboard color bar when spelling mistakes are detected"
+	     android:title="On-Keyboard Error Feedback"
+	     android:defaultValue="top" />
+        
+        <!--  <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="colorbar"
+            android:summary="Shows the on-keyboard color bar when spelling mistakes are detected"
+            android:title="On-Keyboard Error Feedback" >
+        </CheckBoxPreference>
+        -->
+        
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="dots"
+            android:summary="Shows dots on the keyboard where touches have been registered"
+            android:title="Touch History" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="suggestion_highlight"
+            android:summary="Highlights suggestions manually picked from the suggestion bar"
+            android:title="Highlight suggestions" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Tactile Feedback Settings" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="vibrator"
+            android:summary="Vibrates when you make a mistake"
+            android:title="Vibration during mistakes" >
+        </CheckBoxPreference>
+        <!-- 
+        <EditTextPreference
+                android:title="Short vibration duration"
+                android:summary="for minor mistakes and autocorrections"
+                android:key="shortvibe"
+                android:inputType="number"/>
+        <EditTextPreference
+                android:title="Long vibration duration"
+                android:summary="for major mistakes"
+                android:key="longvibe"
+                android:inputType="number"/>
+          -->
+     </PreferenceCategory>
+     
+     <PreferenceCategory android:title="Audio Feedback Settings" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="audio"
+            android:summary="Plays sound when you make a mistake"
+            android:title="Sound during mistakes" >
+        </CheckBoxPreference>
+     </PreferenceCategory>
+    
+    
+     
+    <PreferenceCategory android:title="Error Injection" >
+        <CheckBoxPreference
+            	android:defaultValue="false"
+                android:title="Random error injection"
+                android:summary="Simulation for users tapping the wrong key"
+                android:key="errorinjection">
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            	android:defaultValue="true"
+                android:title="Play sound"
+                android:summary="Play a sound when an error is injected"
+                android:key="errorinjectionsound">
+        </CheckBoxPreference>
+        <EditTextPreference
+                android:title="Injection Probability Threshold"
+                android:summary="% of letters to swap"
+                android:key="injectionThreshold"/>
+    </PreferenceCategory>
+     
+    <!--
+    <PreferenceCategory android:title="Participant" >
+        <EditTextPreference
+                android:title="Participant Name"
+                android:summary=""
+                android:key="prefUsername"/>
+    </PreferenceCategory>
+     -->
+    <PreferenceCategory android:title="Usage Statistics" >
+       <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="fullLogging"
+            android:summary=""
+            android:title="Full Data Logging" >
+            </CheckBoxPreference>
+             
+         <!-- 
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefLocal"
+            android:summary=""
+            android:title="Send Data to Server" >
+        </CheckBoxPreference>
+        -->
+        
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="automode"
+            android:summary="Statistics will be sent only via Wi-Fi, twice daily"
+            android:title="Send anonymous usage statistics " >
+        </CheckBoxPreference>
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checkable="true"
+        android:state_pressed="false"
+        android:state_checked="false"
+        android:drawable="@drawable/btn_keyboard_key_dark_normal_off_holo" />
+    <item
+        android:state_checkable="true"
+        android:state_pressed="true"
+        android:state_checked="false"
+        android:drawable="@drawable/btn_white_matte" />
+    <item
+        android:state_checkable="true"
+        android:state_checked="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/btn_keyboard_key_dark_normal_on_holo"/>
+    <item
+        android:state_checkable="true"
+        android:state_checked="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/btn_white_matte"/>
+    <item
+        android:state_checkable="false"
+        android:state_checked="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/btn_white_matte"/>
+    <item
+        android:state_checkable="false"
+        android:state_checked="false"
+        android:state_pressed="false"
+        android:drawable="@drawable/btn_keyboard_key_dark_normal_holo"/>
+    
+</selector>
