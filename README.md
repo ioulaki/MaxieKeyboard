@@ -15,9 +15,12 @@ MaxieKeyboard was developed at the University of Strathclyde, as part of the EPS
 
 For academic publications related to the use of MaxieKeyboard please visit our website http://mobiquitous.strath.ac.uk and http://www.komninos.info
 
-Credits:
+Credits and Thanks:
 
 MaxieKeyboard was developed with the use of the OpenAdapTxt engine http://openadaptxt.sourceforge.net/
+
 It uses the ASpell library as ported to Android by Paschalis Panteleris https://github.com/padeler/aspellchecker
+
 It uses the String Similarity Metrics library by Marco Aurélio Graciotto Silva https://github.com/magsilva/SimMetrics
+
 Development was based on Google's Input Method Service sample code https://android.googlesource.com/platform/development/+/master/samples/SoftKeyboard/
