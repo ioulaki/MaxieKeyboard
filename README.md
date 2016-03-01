@@ -15,6 +15,10 @@ MaxieKeyboard was developed at the University of Strathclyde, as part of the EPS
 
 For academic publications related to the use of MaxieKeyboard please visit our website http://mobiquitous.strath.ac.uk and http://www.komninos.info
 
+This software is provided under the Apache License 2.0 as is and without any warranty of any kind. Please note that it is intended for research purposes only. If you use our software in your project, please cite our work as follows:
+
+Komninos, A., Nicol E., & Dunlop M. D. (2015).  Designed with Older Adults to Support Better Error Correction in SmartPhone Text Entry: The MaxieKeyboard. Adjunct proc. of the 17th International Conference on Human-Computer Interaction with Mobile Devices and Services. Copenhagen, Denmark, ACM. DOI:10.1145/2786567.2793703
+
 Credits and Thanks:
 
 MaxieKeyboard was developed with the use of the OpenAdapTxt engine http://openadaptxt.sourceforge.net/
