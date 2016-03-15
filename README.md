@@ -5,7 +5,7 @@ MaxieKeyboard is a research tool for studies in mobile text entry.
 
 It offers improved support for users during text entry, by providing visual, audio and haptic feedback whenever a spelling mistake is made by the user. Visual feedback includes the highlighting of text in the editor according to the seriousness of the spelling mistake, as well as a colour bar just above the top row of letters, providing immediate feedback with regard to the spelling mistakes made. Mistakes are highlighted red (major mistakes for which suggestions can be recommended with low confidence), yellow (minor spelling mistakes for which suggestions can be recommended with good confidence) and orange (minor spelling mistakes which have been autocorrected, if autocorrect is enabled). The colourbar additionally lights up as green, when no mistake was made by the user while entering a word. 
 
-Audio and haptic feedback consist of one or two short vibrations, or tones, depending on the gravity of the spelling mistake.
+Audio and haptic feedback consist of one or two short vibrations, or tones, depending on the gravity of the spelling mistake. The visual, audio and haptic feedback methods can all be individually switched on and off from the keyboard's settings screen at runtime, to provide different feedback combinations to users.
 
 The keyboard also offers logging infrastructure allowing researchers to capture detailed information about usage during lab trials, or obfuscated information which is better suited to longitudinal trials (avoids logging of actual input and touch coordinates).
 
