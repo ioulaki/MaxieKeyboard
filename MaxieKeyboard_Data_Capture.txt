@@ -1,0 +1,62 @@
+This text file describes the logging capabilities of MaxieKeyboard. The captured data relates to the following concepts:
+  Typing sessions (a "session" starts when the keyboard is shown and ends when it is hidden)
+  Typing events (the user performing a single input action)
+  Suspect characters (characters replaced by another character after one or more consecutive backspaces)
+  User details (basic demographic details about the user).
+  
+MaxieKeyboard can capture the following types of data, during user input:
+
+Data about Typing Sessions
+  timestamp when the keyboard was shown
+	timestamp when the keyboard was hidden
+	keyboard view height
+	keyboard view width
+	list of all typing events in this session
+	list of all suspect characters in this session
+	application in which input was performed (app package for devices running Android 5.0+)
+	first word typed in this session
+	number of minor spelling mistakes made in this session
+	number of serious spelling mistakes made in this session
+	number of times the suggestion bar was used in this session
+	number of artificially injected errors in this session
+	user device id
+	was autocorrect enabled?
+	was sound enabled?
+	was vibration enabled? 
+	was visual feedback enabled?
+	was the highlighting of suggestion bar words enabled?
+	was the touch input history enabled?
+	
+Data about Typing Events
+  time elapsed since last keypress
+  time of touch down action
+  input event duration (key down to key up)
+  raw x touch down coordinates (screen)
+  raw y touch down coordinates (screen)
+  input event x difference in raw coordinates
+  input event y difference in raw coordinates
+  input event x difference in relative coordinates to keyboard view
+  input event y difference in relative coordinates to keyboard view
+  x touch down coords (relative to keyboard view)
+  y touch down coords (relative to keyboard view)
+  touch ellipse major axis for keydown event
+  touch ellipse minor axis for keydown event
+  raw x touch up coords (screen)
+  raw y touch up coords (screen)
+  x touch up coords (relative to keyboard view)
+  y touch up coords (relative to keyboard view)
+  touch ellipse major axis for keyup event
+  touch ellipse minor axis for keyup event
+  keycode that was finally input
+  keychar that was finally input - if applicable
+  did this character come after a press of the space bar?
+  did this character precede a press of the space bar?
+  did this character follow a press of the shift key?
+  is this a suspect character?
+  ID of the user's device
+  
+Data about Users
+  user id
+  user sex
+  user age bracket
+  user country code
