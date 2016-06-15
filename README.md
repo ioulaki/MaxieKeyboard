@@ -11,6 +11,11 @@ The keyboard also offers logging infrastructure allowing researchers to capture 
 
 Finally, for lab testing, the keyboard includes an algorithm for artificially injecting errors into the user's input stream, in order to provide more opportunities to help researchers observe user behaviour during erroneous input.
 
+COMPILING AND RUNNING NOTES
+Please note that the OpenAdapTxt and ASpell libraries used in this project (.so files) are compiled for ARM only. Hence to run in an emulator, you should not use hardware acceleration (HAXM). Alternatively, run and debug the application on a real device.
+
+LICENSE AND REFERENCING NOTES
+
 MaxieKeyboard was developed at the University of Strathclyde, as part of the EPSRC grant "Empirical investigation & user-centred development of touch-screen text entry methods older adults" http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/K024647/1. The development of MaxieKeyboard was made by Dr. Andreas Komninos with the supervision of Dr. Mark Dunlop
 
 For academic publications related to the use of MaxieKeyboard please visit our website http://mobiquitous.strath.ac.uk and http://www.komninos.info
@@ -19,7 +24,7 @@ This software is provided under the Apache License 2.0 as is and without any war
 
 Komninos, A., Nicol E., & Dunlop M. D. (2015).  Designed with Older Adults to Support Better Error Correction in SmartPhone Text Entry: The MaxieKeyboard. Adjunct proc. of the 17th International Conference on Human-Computer Interaction with Mobile Devices and Services. Copenhagen, Denmark, ACM. DOI:10.1145/2786567.2793703
 
-Credits and Thanks:
+CREDIT AND THANKS
 
 MaxieKeyboard was developed with the use of the OpenAdapTxt engine http://openadaptxt.sourceforge.net/
 
