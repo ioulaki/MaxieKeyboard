@@ -12,6 +12,7 @@ The keyboard also offers logging infrastructure allowing researchers to capture 
 Finally, for lab testing, the keyboard includes an algorithm for artificially injecting errors into the user's input stream, in order to provide more opportunities to help researchers observe user behaviour during erroneous input.
 
 COMPILING AND RUNNING NOTES
+
 Please note that the OpenAdapTxt and ASpell libraries used in this project (.so files) are compiled for ARM only. Hence to run in an emulator, you should not use hardware acceleration (HAXM). Alternatively, run and debug the application on a real device.
 
 LICENSE AND REFERENCING NOTES
