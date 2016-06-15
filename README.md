@@ -7,7 +7,7 @@ It offers improved support for users during text entry, by providing visual, aud
 
 Audio and haptic feedback consist of one or two short vibrations, or tones, depending on the gravity of the spelling mistake. The visual, audio and haptic feedback methods can all be individually switched on and off from the keyboard's settings screen at runtime, to provide different feedback combinations to users.
 
-The keyboard also offers logging infrastructure allowing researchers to capture detailed information about usage during lab trials, or obfuscated information which is better suited to longitudinal trials (avoids logging of actual input and touch coordinates).
+The keyboard also offers logging infrastructure allowing researchers to capture detailed information about usage during lab trials, or obfuscated information which is better suited to longitudinal trials (avoids logging of actual input and touch coordinates). Logging data can be stored on the device only (SQLite), or sent to a remote server (PHP & MySQL required, code is also included).
 
 Finally, for lab testing, the keyboard includes an algorithm for artificially injecting errors into the user's input stream, in order to provide more opportunities to help researchers observe user behaviour during erroneous input.
 
